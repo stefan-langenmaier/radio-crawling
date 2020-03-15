@@ -1,0 +1,9 @@
+version: "2.2"
+services:
+  nifi:
+    image: apache/nifi:latest
+    ports:
+      - 8080:8080
+    volumes:
+      - ./nifi-conf:/opt/nifi/nifi-current/conf
+      - ./nifi-data-scrapping:/data/scrapping
